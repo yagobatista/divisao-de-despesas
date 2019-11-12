@@ -1,0 +1,10 @@
+{
+  "devToolsPort": 19002,
+  "expoServerPort": 19000,
+  "packagerPort": 19001,
+  "packagerPid": 9783,
+  "expoServerNgrokUrl": "https://wy-ru4.anonymous.divisao-de-despesas.exp.direct",
+  "packagerNgrokUrl": "https://packager.wy-ru4.anonymous.divisao-de-despesas.exp.direct",
+  "ngrokPid": 9810,
+  "webpackServerPort": null
+}
