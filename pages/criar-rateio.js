@@ -25,9 +25,6 @@ class CriarRateio extends Component {
     participantes: [],
     name: '',
   };
-  async saveRateio() {
-    // await AsyncStorage.setItem("rateios", "stored value");
-  }
 
   componentDidMount(){
        this.setState({
@@ -52,7 +49,7 @@ class CriarRateio extends Component {
         <Text style={styles.content}>Participantes</Text>
         <Participantes selectedItems={this.state.participantes}></Participantes>
         <View style={styles.content}>
-          <Button title="Salvar" onPress={this.saveRateio} />
+          <Button title="Salvar" />
         </View>
       </View>
     );
@@ -71,30 +68,8 @@ class Participantes extends Component {
     items: []
   };
 
-  multiSelect;
-  getComponent(component) {
-    this.multiSelect = component;
-  }
   onSelectedItemsChange(selectedItems) {
     this.setState({ selectedItems });
-  }
-
-  async componentDidMount() {
-    // const granted = await PermissionsAndroid.request(
-    //   PermissionsAndroid.PERMISSIONS.READ_CONTACTS,
-    //   {
-    //     title: "Contacts",
-    //     message: "This app would like to view your contacts."
-    //   }
-    // );
-    // Contacts.getAll((err, contacts) => {
-    //   if (err === "denied") {
-    //     // error
-    //   } else {
-    //     // contacts returned in Array
-    //   }
-    // });
- 
   }
 
   render() {

@@ -4,7 +4,7 @@ import MultiSelect from "react-native-multiple-select";
 
 import { PermissionsAndroid } from "react-native";
 import Contacts from "react-native-contacts";
-import { TextInput } from "react-native-gesture-handler";
+// import { TextInput } from "react-native-gesture-handler";
 const styles = StyleSheet.create({
   container: {
     display: "flex"
@@ -40,23 +40,21 @@ class CadastrarDespesa extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.content}>Descrição</Text>
-        <TextInput
+        {/* <TextInput
           style={styles.input}
           value={this.state.descricao}
           onChangeText={text => this.setState({ descricao: text })}
-        ></TextInput>
-        {/* <Text style={styles.content}>Data</Text>
-        <Piker selectedItems={this.data}></Piker> */}
+        ></TextInput> */}
         <Text style={styles.content}>Valor</Text>
-        <TextInput
+        {/* <TextInput
           value={this.state.valor}
           onChangeText={text => this.setState({ valor: text })}
-        ></TextInput>
+        ></TextInput> */}
         <Text style={styles.content}>Status</Text>
-        <TextInput
+        {/* <TextInput
           value={this.state.status}
           onChangeText={text => this.setState({ status: text })}
-        ></TextInput>
+        ></TextInput> */}
         <View style={styles.content}>
           <Button title="Salvar" onPress={this.saveDespesa} />
         </View>

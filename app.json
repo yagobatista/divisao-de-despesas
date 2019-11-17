@@ -12,6 +12,10 @@
       "ios",
       "android",
       "web"
+    ],
+    "assetBundlePatterns": [
+      "assets/**",
+      "node_modules/react-navigation-stack/src/views/assets/*"
     ]
   }
 }

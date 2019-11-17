@@ -1,5 +1,8 @@
 import React from 'react';
 import { View, Button, Text } from 'react-native';
+import {
+  TextInput
+} from "react-native-gesture-handler";
 
 const Page1 = ({ navigation }) => (
   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -7,6 +10,10 @@ const Page1 = ({ navigation }) => (
       title="Despesas"
       onPress={() => navigation.navigate('Despesas') }
     />
+    <Text>dsadasdasdsa</Text>
+           <TextInput
+          value={10}
+        ></TextInput>
     <Button 
       title="Cadastrar rateio"
       onPress = {
